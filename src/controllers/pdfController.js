@@ -13,7 +13,7 @@ module.exports = {
             ruta_pdf: req.file.filename,
             materia:req.body.materia
     }).then(function(home) {
-        res.redirect('/index')
+        res.redirect('/')
 })
 },
 view: function(req, res) {
