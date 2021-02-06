@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include ("partials/head.ejs")%>
+<body>
+    <%- include ("partials/header.ejs")%>
+<main>
+    <h1 class="tituloCreate">Subamos un nuevo PDF </h1>
+<section class="new">
+    <form action="" method="POST" enctype="multipart/form-data">
+        <label for="titulo">Título</label><br>
+        <input type="text" id=titulo name="titulo" placeholder="Título..." autocomplete="off"><br>
+
+        <label for="ruta_pdf">Documento</label><br>
+                    <input id="ruta_pdf" type="file" name="ruta_pdf"><br>
+
+         <label for="materia">Materia</label><br>
+        <input name="materia" id="materia" placeholder="Materia..." autocomplete="off"></input><br>
+
+        <button type="submit">Crear</button>
+    </form>
+</section>
+</main>
+
+<%- include ("partials/footer.ejs")%>
+</body>
+</html>

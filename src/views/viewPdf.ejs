@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/estilo.css">
+        <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet"> 
+        <script src="https://kit.fontawesome.com/7ce21fa4dd.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+        
+        <script src="https://kit.fontawesome.com/cfadb59558.js" crossorigin="anonymous"></script>
+        <title><%=documento.titulo%></title>
+    </head>
+<body>
+    
+    <%- include ("partials/header.ejs")%>
+
+<main class="viewerMain">
+    
+    <% for(let i = 0; i < documento.id_pdf.length; i++){%>
+        
+            
+    <%}%>
+    <h1><%=documento.titulo%></h1>
+    
+   <embed src="/pdf/<%=documento.ruta_pdf %> " type="application/pdf" width="90%" height="900px">
+</main>
+
+<%- include ("./partials/footer.ejs")%>
+</body>
+</html>
+

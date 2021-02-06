@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include ("partials/head.ejs")%>
+<body>
+
+    <%- include ("partials/header.ejs")%>
+    <h1 class="tituloIndex">Estos son todos tus PDFS Maca...</h1>
+<section class="line">
+    <% for(let i = 0; i < pdf.length; i++) {%>
+        <a href="/pdf/viewPdf/<%=pdf[i].id_pdf%>">
+         <article class="notas">
+
+                <h2><%= pdf[i].titulo %></h2>
+                <p><%= pdf[i].materia %> <br><i class="fas fa-eye"></i></p>
+               
+        </article>
+    </a>
+   
+        <% } %>
+</section>
+        <%- include ("partials/footer.ejs")%>
+    
+
+
+</body>
+</html>

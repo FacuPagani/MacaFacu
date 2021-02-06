@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@132&display=swap');
+body{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family: "Sora";
+    background-color:#F0EFE8 ;
+}
+
+a{text-decoration: none;
+color:#8783D1 ;}
+
+
+section.lista{
+width: 100%;
+height: 105px;
+font-size: 20px;
+background-color: #E3B9BC;
+display: flex;
+color: #8783D1;
+
+}
+
+.lista ul{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 20px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+.lista ul li{
+    cursor: pointer; 
+}
+
+.lista ul li:hover{
+cursor: pointer;   
+font-size: 25px;
+background-color: #E3B9BC;
+color: #889CF4;
+padding-top: 0%;
+border: 5px dotted #AA9ABA;
+border-radius: 10px;
+text-justify: auto;
+margin-right: 20px;
+}
+
+section.new{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 500;
+}
+section.new form input{
+    margin-bottom: 100px;
+    width: 60%;
+    height: 30px;
+    border: 3px solid #8783D1;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+section.new form label{
+    margin-top: 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+section.new form button{
+    height: 50px;
+    width: 100px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: dotted;
+    background-color:#E3B9BC ;
+}
+section.new form button:hover{
+    height: 50px;
+    width: 100px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: dotted;
+    box-shadow: #af8f91 5px 5px ;
+    opacity: 80%;
+    background-color:#E3B9BC ;
+}
+
+main section.new{
+    height: 75vh;
+}
+footer{
+    background-color: black;
+    height: 40px;
+    text-align: center;
+}
+footer h4.copy{
+    color: #F0EFE8;
+    
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+}
+
+.list{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.tituloIndex {
+    text-align: center;
+}
+.tituloCreate{
+    text-align: center;
+}
+
+.line{
+    display: flex;
+    flex-direction: row;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   height: 90vh;
+}
+article.notas{
+   margin-top: 100px;
+   background-color:#fffbe0 ;
+    color:#8783D1;
+    box-shadow: 2px 2px 5px #999;
+    border-radius: 20px;
+  filter: shadow(color=#999999, direction=135, strength=2);
+  font-size: 25px;
+  text-align: center;
+  
+
+}
+
+article.notas:hover{
+    border: #8783D1 dotted 2px;
+    border-radius: 20px;
+    color:#889CF4;
+}
+
+
+
+main.viewerMain{
+    background-color: #F0EFE8;
+}
+main.viewerMain h1{
+    text-align: center;
+}
+main.viewerMain embed{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
