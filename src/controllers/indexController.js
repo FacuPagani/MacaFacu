@@ -7,9 +7,10 @@ module.exports = {
             return res.render('index', {
                 pdf: pdf
             })
-        }).catch(error)
-            console.error(error);
-        
+        }).catch(reason => {
+            console.log(reason)
+            res.send('Algo salio mal XP: ' + reason)
+        });
     }
 }
 
