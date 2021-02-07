@@ -24,11 +24,5 @@ view: function(req, res) {
         })
     })
 },
-/*all:function(req,res){
-db.pdfs.findAll(pdf).then(function(pdfEntero){
-    res.render("viewPdf",{
-        pdfEntero : pdfEntero
-    })
-})
-}*/
+
 }

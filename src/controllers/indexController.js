@@ -7,7 +7,9 @@ module.exports = {
             return res.render('index', {
                 pdf: pdf
             })
-        })
+        }).catch(error)
+            console.error(error);
+        
     }
 }
 
