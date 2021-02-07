@@ -17,7 +17,7 @@ app.set('views', path.join(__dirname, './src/views'));
 app.use("/", indexRouter);
 app.use("/pdf", pdfRouter);
 app.use("/calendar", calendarRouter);
-//app.use('/detail', detailRouter);
+
 
 app.listen(process.env.PORT || 3000, () => {
     console.log("Servidor corriendo en el puerto 3000")
