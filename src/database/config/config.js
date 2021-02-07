@@ -5,7 +5,7 @@ module.exports = {
     "database": "maca",
     "host": "127.0.0.1",
     "dialect": "mysql",
-    "connection": Env.get('DB_CONNECTION', 'mysql'),
+   
   },
   "test": {
     "username": "root",
